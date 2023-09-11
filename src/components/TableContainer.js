@@ -25,7 +25,9 @@ const TableData = ({
         >
           <TableHead className="TableHeadCell">
             <TableRow className="TableRow">
-              <TableCell>ID</TableCell>
+              <TableCell>
+                <b>ID</b>
+              </TableCell>
               <TableCell>Doctor Name</TableCell>
               <TableCell>Phone Number</TableCell>
               <TableCell>Actions</TableCell>
