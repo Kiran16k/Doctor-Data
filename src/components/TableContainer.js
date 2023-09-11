@@ -6,7 +6,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import DeleteIcon from "@mui/icons-material/Delete";
-import ModalComponent from "./Modal";
+import AddEdit from "./Modal";
 import React from "react";
 
 const TableData = ({
@@ -58,7 +58,7 @@ const TableData = ({
                     }}
                   >
                     <DeleteIcon onClick={() => handleDelete(row.id)} />
-                    <ModalComponent
+                    <AddEdit
                       type="edit"
                       data={row}
                       updateJsonData={setJsonData}

@@ -7,7 +7,7 @@ import TextField from "@mui/material/TextField";
 
 import "./Table.css";
 
-export default function ModalComponent({
+export default function AddEdit({
   type,
   data,
   updateJsonData,

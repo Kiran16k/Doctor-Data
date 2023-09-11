@@ -6,7 +6,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
-import ModalComponent from "./Modal";
+import AddEdit from "./Modal";
 import "./Table.css";
 import TableData from "./TableContainer";
 
@@ -60,7 +60,7 @@ export default function Doctor() {
     <fieldset style={{ border: "none" }}>
       <div className="DoctorHeading">
         <h1>Doctors</h1>
-        <ModalComponent type="add" updateDoctorList={updateDoctorList} />
+        <AddEdit type="add" updateDoctorList={updateDoctorList} />
       </div>
       <TableData
         jsonData={jsonData}
