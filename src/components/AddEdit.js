@@ -51,6 +51,7 @@ export default function AddEdit({
             doctor.id === data.id ? { ...doctor, requestData } : doctor
           )
         );
+        updateDoctorList();
       } else if (type === "add") {
         await axios.post(apiUrl, requestData);
         updateDoctorList();
